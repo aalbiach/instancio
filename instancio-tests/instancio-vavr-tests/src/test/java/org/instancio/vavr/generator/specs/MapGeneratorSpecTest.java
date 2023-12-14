@@ -35,6 +35,10 @@ class MapGeneratorSpecTest {
 
     private final MapGeneratorExt<?, ?> generator = new MapGeneratorExt<>(context);
 
+    private static int calculatePercentage(final int initial, final int percentage) {
+        return initial + initial * percentage / 100;
+    }
+
     @BeforeEach
     void setUp() {
         generator.minSize(0).minSize(1);
@@ -102,10 +106,6 @@ class MapGeneratorSpecTest {
         assertThatThrownBy(() -> generator.maxSize(-1))
                 .isExactlyInstanceOf(InstancioApiException.class)
                 .hasMessageContaining("size must not be negative: -1");
-    }
-
-    private static int calculatePercentage(final int initial, final int percentage) {
-        return initial + initial * percentage / 100;
     }
 
     /**

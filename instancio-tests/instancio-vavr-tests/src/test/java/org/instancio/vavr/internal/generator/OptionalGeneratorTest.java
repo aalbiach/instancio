@@ -31,9 +31,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class OptionalGeneratorTest {
 
-    protected final int SAMPLE_SIZE = 500;
+    private static final int SAMPLE_SIZE = 500;
     private static final Settings DEFAULT_SETTINGS = Settings.defaults().lock();
-
     private static final Random random = new DefaultRandom();
     private static final GeneratorContext context = new GeneratorContext(DEFAULT_SETTINGS, random);
     private final OptionalGenerator<Boolean> generator = new OptionalGenerator<>(context);

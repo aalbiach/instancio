@@ -47,7 +47,6 @@ class MapGeneratorTest {
             .set(Keys.MAP_MIN_SIZE, MIN_SIZE)
             .set(Keys.MAP_MAX_SIZE, MAX_SIZE)
             .set(Keys.MAP_NULLABLE, true);
-
     private static final Random random = new DefaultRandom();
     private static final GeneratorContext context = new GeneratorContext(settings, random);
     private final VavrMapGenerator<?, ?> generator = new VavrMapGenerator<>(context);

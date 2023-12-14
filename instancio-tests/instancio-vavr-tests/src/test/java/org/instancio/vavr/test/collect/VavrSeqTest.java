@@ -30,10 +30,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @ExtendWith(InstancioExtension.class)
 class VavrSeqTest {
 
-    private static final class Holder {
-        private Seq<String> seq;
-    }
-
     @Test
     void createViaTypeToken() {
         final Seq<String> result = Instancio.create(new TypeToken<>() {
@@ -65,6 +61,10 @@ class VavrSeqTest {
         assertThat(result.seq)
                 .isInstanceOf(Seq.class)
                 .hasSizeBetween(Constants.MIN_SIZE, Constants.MAX_SIZE);
+    }
+
+    private static final class Holder {
+        private Seq<String> seq;
     }
 
 }

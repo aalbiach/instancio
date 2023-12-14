@@ -30,10 +30,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @ExtendWith(InstancioExtension.class)
 class VavrSetTest {
 
-    private static final class Holder {
-        private Set<String> set;
-    }
-
     @Test
     void createViaTypeToken() {
         final Set<String> result = Instancio.create(new TypeToken<>() {
@@ -65,6 +61,10 @@ class VavrSetTest {
         assertThat(result.set)
                 .isInstanceOf(Set.class)
                 .hasSizeBetween(Constants.MIN_SIZE, Constants.MAX_SIZE);
+    }
+
+    private static final class Holder {
+        private Set<String> set;
     }
 
 }

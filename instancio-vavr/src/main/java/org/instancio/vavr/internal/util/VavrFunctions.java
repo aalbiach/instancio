@@ -20,6 +20,10 @@ import java.util.function.Function;
 
 public final class VavrFunctions {
 
+    private VavrFunctions() {
+        // non-instantiable
+    }
+
     @SuppressWarnings("rawtypes")
     public static <R> Function<Iterable, R> fromIterable(Function<Iterable, R> fn) {
         return fn;
@@ -28,9 +32,5 @@ public final class VavrFunctions {
     @SuppressWarnings("rawtypes")
     public static <R> Function<Map, R> fromMap(Function<Map, R> fn) {
         return fn;
-    }
-
-    private VavrFunctions() {
-        // non-instantiable
     }
 }

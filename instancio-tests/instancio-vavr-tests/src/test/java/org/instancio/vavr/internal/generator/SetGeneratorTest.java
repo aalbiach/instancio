@@ -45,7 +45,6 @@ class SetGeneratorTest {
             .set(Keys.COLLECTION_MIN_SIZE, MIN_SIZE)
             .set(Keys.COLLECTION_MAX_SIZE, MAX_SIZE)
             .set(Keys.COLLECTION_NULLABLE, true);
-
     private static final Random random = new DefaultRandom();
     private static final GeneratorContext context = new GeneratorContext(settings, random);
     private final VavrSetGenerator<?> generator = new VavrSetGenerator<>(context);

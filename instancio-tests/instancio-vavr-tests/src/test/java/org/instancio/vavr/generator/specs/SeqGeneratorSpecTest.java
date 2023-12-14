@@ -35,6 +35,10 @@ class SeqGeneratorSpecTest {
 
     private final CollectionGeneratorExt<?> generator = new CollectionGeneratorExt<>(context);
 
+    private static int calculatePercentage(final int initial, final int percentage) {
+        return initial + initial * percentage / 100;
+    }
+
     @BeforeEach
     void setUp() {
         generator.minSize(0).minSize(1);
@@ -98,10 +102,6 @@ class SeqGeneratorSpecTest {
         assertThatThrownBy(() -> generator.maxSize(-1))
                 .isExactlyInstanceOf(InstancioApiException.class)
                 .hasMessageContaining("size must not be negative: -1");
-    }
-
-    private static int calculatePercentage(final int initial, final int percentage) {
-        return initial + initial * percentage / 100;
     }
 
     /**
