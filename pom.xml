@@ -57,6 +57,7 @@
         </sonar.coverage.jacoco.xmlReportPaths>
         <latest.release.version>3.7.0</latest.release.version>
         <version.guava>32.1.3-jre</version.guava>
+        <version.vavr>0.10.4</version.vavr>
         <version.hibernate.validator>8.0.0.Final</version.hibernate.validator>
         <version.jakarta.persistence>3.0.0</version.jakarta.persistence>
         <version.jakarta.validation>3.0.2</version.jakarta.validation>
@@ -78,6 +79,7 @@
         <module>instancio-junit</module>
         <module>instancio-quickcheck</module>
         <module>instancio-guava</module>
+        <module>instancio-vavr</module>
         <module>instancio-tests</module>
     </modules>
 
@@ -88,6 +90,7 @@
                 <module>instancio-core</module>
                 <module>instancio-junit</module>
                 <module>instancio-guava</module>
+                <module>instancio-vavr</module>
             </modules>
             <build>
                 <plugins>
