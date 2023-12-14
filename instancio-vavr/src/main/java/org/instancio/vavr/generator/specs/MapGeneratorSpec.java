@@ -25,7 +25,7 @@ import java.util.Map;
  *
  * @param <K> the type of the keys
  * @param <V> the type of the mapped values
- * @since 3.6.1
+ * @since 3.7.1
  */
 @ExperimentalApi
 public interface MapGeneratorSpec<K, V> extends SizeGeneratorSpec<Map<K, V>> {

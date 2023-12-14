@@ -21,7 +21,7 @@ import org.instancio.generator.GeneratorSpec;
 /**
  * Generator spec for {@link Option}.
  *
- * @since 3.6.1
+ * @since 3.7.1
  */
 public interface OptionGeneratorSpec<T> extends GeneratorSpec<Option<T>> {
 
@@ -29,7 +29,7 @@ public interface OptionGeneratorSpec<T> extends GeneratorSpec<Option<T>> {
      * Specifies that an empty {@code Option} can be generated.
      *
      * @return spec builder
-     * @since 3.6.1
+     * @since 3.7.1
      */
     GeneratorSpec<Option<T>> allowEmpty();
 }

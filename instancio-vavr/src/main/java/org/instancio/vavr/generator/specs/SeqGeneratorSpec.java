@@ -24,7 +24,7 @@ import java.util.List;
  * Generator spec for {@link io.vavr.collection.Seq Sequences}.
  *
  * @param <V> the type of the values
- * @since 3.6.1
+ * @since 3.7.1
  */
 @ExperimentalApi
 public interface SeqGeneratorSpec<T> extends SizeGeneratorSpec<List<T>> {

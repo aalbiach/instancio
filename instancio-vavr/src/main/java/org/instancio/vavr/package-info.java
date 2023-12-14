@@ -16,6 +16,6 @@
 /**
  * Provides support for Vavr.
  *
- * @since 3.6.1
+ * @since 3.7.1
  */
 package org.instancio.vavr;

@@ -24,7 +24,7 @@ import java.util.Set;
  * Generator spec for {@link io.vavr.collection.Set Sets}.
  *
  * @param <T> the type of the values
- * @since 3.6.1
+ * @since 3.7.1
  */
 @ExperimentalApi
 public interface SetGeneratorSpec<T> extends SizeGeneratorSpec<Set<T>> {
